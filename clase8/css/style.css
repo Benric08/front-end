@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: lightgrey;
+}
+
+header {
+    padding: 12px 20px;
+    align-items: center;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+
+    & .logo {
+        display: flex;
+        align-items: center;
+        color: white;
+
+        & h2 span {
+            color: #39B24A;
+
+            &+span {
+                color: #FC200C;
+            }
+
+            ;
+        }
+
+    }
+
+    ;
+
+    & nav ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+
+        & li {
+            padding: 8px;
+
+            & a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
+
+main {
+
+    margin: 40px 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    & section {
+        width: 49%;
+        border-radius: 12px;
+        background-color: white;
+    }
+
+    ;
+
+    & .promocion {
+        position: relative;
+
+        & h2 {
+            color: #FC200C;
+            position: absolute;
+            top: 24px;
+            left: 24px;
+
+            & span {
+                color: white
+            }
+        }
+
+        ;
+
+        & img {
+            height: 100%;
+            width: 100%;
+            border-radius: 12px;
+            object-fit: fill;
+
+        }
+    }
+
+}
+
+footer {
+    padding: 40px 20px;
+    align-items: center;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+
+    & .logo {
+        display: flex;
+        align-items: center;
+        color: white;
+
+        & h2 span {
+            color: #39B24A;
+
+            &+span {
+                color: #FC200C;
+            }
+
+            ;
+        }
+
+    }
+
+    ;
+
+    & ul {
+        order: -1;
+
+        list-style: none;
+
+        & li {
+            padding: 8px 0px;
+
+            & a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
+
+.ranking {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 0px 60px;
+
+    & .ranking-title {
+        margin: 50px;
+        align-self: center
+    }
+
+    ;
+
+    & .ranking-content {
+        display: flex;
+        align-items: center;
+
+        & div {
+            
+            width: 50%;
+
+            & h3 {
+                margin: 8px;
+            };
+
+            & img {
+                width: 60%;
+
+            }
+            & + div{
+                text-align: center;
+            }
+        }
+
+    }
+}
+
+.top-pizzas ol li {
+    margin: 4px;
+}
